@@ -1,1 +1,0 @@
-# sophiamirandaoliveira.github.io
