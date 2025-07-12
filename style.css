@@ -73,3 +73,63 @@ footer p{
     font-family: sans-serif;
     font-size: 16px;
 }
+
+/* Estilos para a parte das seções "Sobre mim" e "Habilidades" */
+.sobre {
+  display: flex; /* Faz com que as seções (.sobre-mim e .habilidades) fiquem lado a lado */
+  flex-wrap: wrap; /* Permite que as seções quebrem para a próxima linha em telas menores */
+  background-color: #fff; /* Define a cor de fundo como branco */
+  padding: 60px 80px; /* Adiciona espaçamento interno: 60px em cima/baixo, 80px nas laterais */
+  gap: 40px; /* Adiciona um espaçamento de 40 pixels entre as seções */
+}
+
+/* Estilos para o parágrafo dentro da seção "Sobre mim" */
+.sobre-mim p {
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+  line-height: 1.6; /* Define o espaçamento entre as linhas de texto (1.6 vezes o tamanho da fonte) */
+  max-width: 90%; /* Limita a largura do parágrafo a 90% do espaço disponível */
+}
+
+/* Estilos para a linha divisória abaixo dos títulos das seções */
+.linha {
+  width: 60px; /* Define a largura da linha como 60 pixels */
+  height: 4px; /* Define a altura da linha como 4 pixels */
+  background-color: black; /* Define a cor de fundo da linha como preto */
+  margin-bottom: 20px; /* Adiciona uma margem de 20 pixels abaixo da linha */
+  border-radius: 2px; /* Arredonda levemente os cantos da linha */
+}
+
+/* Estilos para as seções "Sobre mim" e "Habilidades" */
+.sobre-mim, .habilidades {
+  flex: 1; /* Permite que cada seção ocupe 1 parte do espaço disponível */
+  min-width: 300px; /* Define uma largura mínima de 300 pixels para evitar que fiquem muito pequenas */
+}
+
+/* Estilos para os títulos h2 dentro das seções "Sobre mim" e "Habilidades" */
+.sobre-mim h2, .habilidades h2 {
+  font-size: 32px; /* Define o tamanho da fonte como 32 pixels */
+  color: rgb(0, 0, 0); /* Define a cor do texto como cinza */
+  margin-bottom: 10px; /* Adiciona uma margem de 10 pixels abaixo do título */
+}
+
+/* Estilos para a lista de habilidades */
+.habilidades ul {
+  list-style: none; /* Remove os marcadores de lista padrão (as bolinhas) */
+  padding-left: 0; /* Remove o preenchimento esquerdo padrão da lista */
+}
+
+/* Estilos para cada item da lista de habilidades */
+.habilidades li {
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+  margin-bottom: 12px; /* Adiciona uma margem de 12 pixels abaixo de cada item */
+  padding-left: 20px; /* Adiciona um preenchimento esquerdo para o texto (para dar espaço ao check) */
+  position: relative; /* Define a posição relativa para que o pseudo-elemento "::before" possa ser posicionado dentro dele */
+}
+
+/* Estilos para o marcador de check (✔) antes de cada item de habilidade */
+.habilidades li::before {
+  content: "✔"; /* Insere o caractere de check (✔) antes do texto */
+  position: absolute; /* Posiciona o check de forma absoluta em relação ao seu pai (.habilidades li) */
+  left: 0; /* Alinha o check na borda esquerda do item */
+  color: black; /* Define a cor do check como preto */
+}
